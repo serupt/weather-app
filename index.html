@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <form>
+          <input
+            type="text"
+            placeholder="Search locations(zip code, city name, etc...)"
+            class="searchInput"
+          />
+          <button class="search__btn hidden">&rarr;</button>
+        </form>
+      </div>
+      <div class="display-weather hidden">
+        <h1 class="display-weather-location">Location</h1>
+        <div class="temp-icon">
+          <p class="display-weather-icon">Icon</p>
+          <p class="display-weather-temperature-f">50F</p>
+        </div>
+        <p class="display-weather-description">Partly cloudy</p>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

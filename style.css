@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  background: hsla(195, 86%, 50%, 1);
+
+  background: linear-gradient(hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  gap: 40px;
+}
+
+.search-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search__btn {
+  display: block;
+}
+
+input[type="text"] {
+  display: block;
+  width: 400px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  border: 2px solid #707070;
+}
+
+.display-weather {
+  border: 4px solid black;
+  width: auto;
+  margin: 50px auto;
+  padding: 40px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.display-weather-location {
+  text-align: center;
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.temp-icon {
+  grid-row: 2;
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.display-weather-icon {
+  text-align: center;
+}
+
+.display-weather-temperature-f {
+  font-size: 30px;
+}
+
+.display-weather-description {
+  font-size: 24px;
+  text-align: center;
+  grid-row: 3;
+  grid-column: 1/-1;
+}
+
+.hidden {
+  display: none;
+}
